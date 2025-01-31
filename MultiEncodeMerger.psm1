@@ -17,9 +17,6 @@ function Find-MultiEncodedFiles {
         $output = @{}
     _searcher -path $path -extensionToKeep $extensionToKeep -outputCollection $output -recurse:$recurse
     
-    Write-Verbose "Foo"
-    Write-Verbose ($output["02 - Missed Medicine"].ToKeep)
-    Write-Verbose "Bar"
 
     if($delete){
         Write-Verbose "Delete flag passed, going to clean up now."
